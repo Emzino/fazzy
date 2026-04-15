@@ -107,18 +107,18 @@
     color: var(--text-soft);
     margin-bottom: 0.45rem;
   }
-  .field-group input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1.5px solid #f2d6e0;
-    border-radius: 12px;
-    font-size: 0.95rem;
-    font-family: 'DM Sans', sans-serif;
-    background: var(--rose-pale);
-    color: var(--text);
-    outline: none;
-    transition: border-color 0.2s;
-  }
+.field-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #f2d6e0;
+  border-radius: 12px;
+  font-size: 16px; /* stops mobile zoom */
+  font-family: 'DM Sans', sans-serif;
+  background: var(--rose-pale);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
   .field-group input:focus { border-color: var(--rose-deep); }
 
   .login-btn {
@@ -759,7 +759,7 @@ I feel lucky to have you in my life. No matter what happens, I hope you always r
 </div>
 
 <script>
-  const CORRECT_PASSWORD = "";
+  const CORRECT_PASSWORD = "iloveitiloveitiloveit";
 
   function tryLogin() {
     const pass = document.getElementById('password-input').value;
